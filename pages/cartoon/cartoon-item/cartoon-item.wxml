@@ -1,0 +1,18 @@
+ <template name="cartoonItemTpl">
+ <view class="cartoon-container">
+      <view class="cartoon-author-date">
+        <text>{{date}}</text>
+      </view>
+      <text class="cartoon-title">{{title}}</text>
+      <image class="cartoon-image" src="{{cartoonImg}}" mode="aspectFill" />
+      <text class="cartoon-content">{{content}}</text>
+      <view class="cartoon-like">
+        <image src="/images/icon/wx_app_collect.png" />
+        <text>{{collectionNum}}</text>
+        <image src="/images/icon/wx_app_view.png"></image>
+        <text>{{readingNum}}</text>
+        <image src="/images/icon/wx_app_message.png"></image>
+        <text>{{commentNum}}</text>
+      </view>
+    </view>
+ </template>

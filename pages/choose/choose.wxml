@@ -1,0 +1,17 @@
+<view class="choose_container">
+  <view class="avater">
+    <image class="choose-avater-70" src="../../images/icon/1970.jpg"></image>
+    <image class="choose-avater-70-79" src="../../images/icon/1970-1979.jpg"></image>
+    <image class="choose-avater-80-89" src="../../images/icon/1980-1989.jpg"></image>
+    <image class="choose-avater-90-99" src="../../images/icon/1990-1999.jpg"></image>
+    <image class="choose-avater-00" src="../../images/icon/2000.jpg"></image>
+  </view>
+  <view class="question-container">
+    <text class="question">请问您对哪一年代的动漫最感兴趣？</text>
+  </view>
+  <view class="segmentedControl" catchtap='onTapJump'>
+    <block wx:for="{{radioValues}}">
+      <text data-index="{{index}}" bindtap="indexChanged" class="{{clazz[index]}}">{{item.value}}</text>
+    </block>
+  </view>
+</view>

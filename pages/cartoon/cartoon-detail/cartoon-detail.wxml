@@ -1,0 +1,24 @@
+<view class="container">
+  <image class="head-image" src="{{cartoon.cartoonImg}}"></image>
+  <text class="title">{{cartoon.title}}</text>
+  <view class="author-box">
+    <text class="author">{{cartoon.author}}</text>
+  </view>
+  <text class="detail">{{cartoon.detail}}</text>
+</view>
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-cartoon-id="{{cartoon.cartoonId}}">
+     <image animation="{{animationUp}}" wx:if="{{cartoon.upStatus}}" src="/images/icon/wx_app_liked.png" />
+     <image animation="{{animationUp}}" wx:else src="/images/icon/wx_app_like.png" />
+    <text>{{cartoon.upNum}}</text>
+  </view>
+  <view class="tool-item comment" catchtap="onCommentTap" data-decade="{{cartoon.decade}}" data-cartoon-id="{{cartoon.cartoonId}}">
+    <image src="/images/icon/wx_app_message.png"></image>
+    <text>{{cartoon.commentNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap" data-cartoon-id="{{cartoon.cartoonId}}">
+    <image wx:if="{{cartoon.collectionStatus}}" src="/images/icon/wx_app_collected.png" />
+    <image wx:else src="/images/icon/wx_app_collect.png" />
+    <text>{{cartoon.collectionNum}}</text>
+  </view>
+</view>

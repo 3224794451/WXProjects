@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/choose/choose",
+    "pages/cartoon/cartoon-70/cartoon-70",
+    "pages/cartoon/cartoon-70-79/cartoon-70-79",
+    "pages/cartoon/cartoon-80-89/cartoon-80-89",
+    "pages/cartoon/cartoon-90-99/cartoon-90-99",
+    "pages/cartoon/cartoon-00/cartoon-00",
+    "pages/cartoon/cartoon-detail/cartoon-detail",
+    "pages/cartoon/cartoon-comment/cartoon-comment"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE900C",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "borderStyle": "white",
+    "selectedColor": "#EE9D19",
+    "color": "#826F6B",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list":[
+      {
+        "pagePath": "pages/cartoon/cartoon-70/cartoon-70",
+        "text":"1970以前",
+        "iconPath": "images/icon/1970.jpg",
+        "selectedIconPath":"images/icon/1970.jpg"
+      },
+      {
+        "pagePath": "pages/cartoon/cartoon-70-79/cartoon-70-79",
+        "text": "70年代",
+        "iconPath": "images/icon/1970-1979.jpg",
+        "selectedIconPath":"images/icon/1970-1979.jpg"
+      },
+      {
+        "pagePath": "pages/cartoon/cartoon-80-89/cartoon-80-89",
+        "text": "80年代",
+        "iconPath": "images/icon/1980-1989.jpg",
+        "selectedIconPath":"images/icon/1980-1989.jpg"
+      },
+      {
+        "pagePath": "pages/cartoon/cartoon-90-99/cartoon-90-99",
+        "text": "90年代",
+        "iconPath": "images/icon/1990-1999.jpg",
+        "selectedIconPath": "images/icon/1990-1999.jpg"
+      },
+      {
+        "pagePath": "pages/cartoon/cartoon-00/cartoon-00",
+        "text": "新世纪",
+        "iconPath": "images/icon/2000.jpg",
+        "selectedIconPath":"images/icon/2000.jpg"
+      }
+    ]
+  }
+}

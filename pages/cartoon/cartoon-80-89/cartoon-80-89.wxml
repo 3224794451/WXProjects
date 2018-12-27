@@ -1,0 +1,19 @@
+<import src="../cartoon-item/cartoon-item.wxml" />
+<view>
+  <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000" circular="true">
+    <swiper-item>
+      <image src="/images/cartoon-80-89/a.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/cartoon-80-89/san.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/cartoon-80-89/hei.jpg" />
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{cartoon89}}" wx:for-item="item" wx:for-index="idx">
+    <view catchtap="onTapToDetail" data-decade='89' data-cartoon-id="{{item.cartoonId}}" >
+      <template is="cartoonItemTpl" data="{{...item}}" />
+    </view>
+  </block>
+</view>
